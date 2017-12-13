@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-12-13 10:32:57
+-- Generation Time: 2017-12-13 11:55:32
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -23,12 +23,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `banner`
+-- 表的结构 `banners`
 --
 
-CREATE TABLE IF NOT EXISTS `banner` (
-  `bid` int(10) NOT NULL AUTO_INCREMENT COMMENT 'banner的id',
-  `bthumb` int(255) NOT NULL COMMENT 'banner图片',
+CREATE TABLE IF NOT EXISTS `banners` (
+  `bid` int(10) NOT NULL AUTO_INCREMENT,
+  `bthumb` int(255) NOT NULL,
   PRIMARY KEY (`bid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
