@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/yueji/public/css/login.css">
+    <script src="/yueji/public/js/jquery.js"></script>
+    <script src="/yueji/public/js/login.js"></script>
+</head>
+<style>
+    .form-help{
+        color:#fff;
+    }
+</style>
+<body>
+<form >
+    <div class="formGroup">
+        <h3>登录界面</h3>
+    </div>
+    <div class="formGroup">
+        <input type="text" name="user" placeholder="请输入用户名" class="username" data-validate="require:'必填项';username:'格式不正确'">
+    </div>
+    <div class="formGroup">
+        <input type="password" name="password" placeholder="请输入密码" class="password" data-validate="require:'必填项';password:'请输入6-10位数字字母下划线'">
+    </div>
+    <div class="formGroup">
+        <input type="submit" value="提交" class="btn">
+    </div>
+</form>
+</body>
+</html>

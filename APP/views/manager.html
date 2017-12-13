@@ -1,0 +1,77 @@
+<?php
+ include 'adminheader.html';
+?>
+<div>
+    <style>
+        input{
+            outline: none;
+            border:none;
+            text-align: center;
+
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+
+    <!-- Nav tabs -->
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist" id="mytab">
+            <li role="presentation" class="active"><a href="#add" aria-controls="home" role="tab" data-toggle="tab" id="add">增加</a>
+            </li>
+            <li role="presentation"><a href="#show" aria-controls="settings" role="tab" data-toggle="tab" id="show">查看</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="add-tab">
+
+
+                <form class="form-horizontal" style="margin-top: 30px">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="用户名" name="username">
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">提交</button>
+                    </div>
+                    <!--</div>-->
+                </form>
+            </div>
+
+
+
+            <div role="tabpanel" class="tab-pane" id="show-tab">
+
+                <table class="table table-bordered" style="margin-top: 50px">
+                    <thead  >
+                    <th style="text-align: center">id</th>
+                    <th style="text-align: center">用户名</th>
+                    <th style="text-align: center">操作</th>
+                    </thead>
+                    <tbody>
+                    <tr align="center">
+                        <td >1</td>
+                        <td>真心话</td>
+                        <td>1</td>
+                        <td> <button class="btn btn-info">删除</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>2</td>
+                        <td>大冒险</td>
+                        <td>2   </td>
+                        <td> <button class="btn btn-info">删除</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/yueji/public/js/manager.js"></script>
